@@ -1,0 +1,6 @@
+The development board named YFDVK-255-I has a xscale cpu (PXA255). 
+
+Toolchain: arm-2008q3-41-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz2
+
+To compile:   
+./yf255_Makefile.sh
