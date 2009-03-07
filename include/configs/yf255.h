@@ -32,7 +32,6 @@
 
 #include <asm/arch/pxa-regs.h>
 
-#define CONFIG_SKIP_LOWLEVEL_INIT  //zkj0000000000000000000000
 /*
  * High Level Configuration Options
  * (easy to change)
