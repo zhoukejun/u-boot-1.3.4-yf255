@@ -31,7 +31,7 @@
 #define __CONFIG_H
 
 #include <asm/arch/pxa-regs.h>
-
+//#define CONFIG_SKIP_LOWLEVEL_INIT //zkj. if boot from RAM
 /*
  * High Level Configuration Options
  * (easy to change)
@@ -90,7 +90,7 @@
 
 
 #define CONFIG_BOOTDELAY	3
-#define CONFIG_ETHADDR		08:00:3e:26:0a:5b
+#define CONFIG_ETHADDR		00:80:0f:26:0a:5b
 #define CONFIG_NETMASK		255.255.0.0
 #define CONFIG_IPADDR		192.168.2.30
 #define CONFIG_SERVERIP		192.168.2.10
