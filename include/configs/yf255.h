@@ -36,9 +36,9 @@
  * High Level Configuration Options
  * (easy to change)
  */
+#define CONFIG_ARCH_YF255
 #define CONFIG_PXA250		1	/* This is an PXA250 CPU    */
 //#define CONFIG_LUBBOCK		1	/* on an LUBBOCK Board	    */
-
 //#define CONFIG_MMC		1
 #define BOARD_LATE_INIT		1
 //#define CONFIG_DOS_PARTITION
@@ -91,7 +91,7 @@
 
 #define CONFIG_BOOTDELAY	3
 #define CONFIG_ETHADDR		00:80:0f:26:0a:5b
-#define CONFIG_NETMASK		255.255.0.0
+#define CONFIG_NETMASK		255.255.255.0
 #define CONFIG_IPADDR		192.168.2.30
 #define CONFIG_SERVERIP		192.168.2.10
 #define CONFIG_BOOTCOMMAND	"cp.b 0x80000 0xa0200000 0x100000; go 0xa0200000"//zkj "bootm 80000"

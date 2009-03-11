@@ -47,7 +47,7 @@ typedef unsigned char                   byte;
 typedef unsigned short                  word;
 typedef unsigned long int               dword;
 
-#define SMC_DEBUG 4
+//#define SMC_DEBUG 4
 /* Because of bank switching, the LAN91xxx uses only 16 I/O ports */
 
 #define SMC_IO_EXTENT   16

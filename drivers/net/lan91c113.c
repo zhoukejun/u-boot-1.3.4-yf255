@@ -1018,12 +1018,13 @@ static int smc_open(bd_t *bd)
 {
         int     i;      /* used to set hw ethernet address */
 	int	err;
-
+/*
 	if (smc91c111_init() == -1)
 	{
 		printf ("smc91c111_init() error\n");
 		return -1;
 	}
+*/
         PRINTK2("%s:smc_open\n", CARDNAME);
 
         /* reset the hardware */
