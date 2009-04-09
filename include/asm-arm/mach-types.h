@@ -1596,6 +1596,7 @@ extern unsigned int __machine_arch_type;
 #define MACH_TYPE_XDACOMET             1603
 #define MACH_TYPE_DEXFLEX2             1604
 #define MACH_TYPE_SFFSDR               1657
+#define MACH_TYPE_YF255                1874
 
 #ifdef CONFIG_ARCH_EBSA110
 # ifdef machine_arch_type
@@ -20605,6 +20606,17 @@ extern unsigned int __machine_arch_type;
 # define machine_is_dexflex2()	(0)
 #endif
 
+#ifdef CONFIG_ARCH_YF255
+# ifdef machine_arch_type
+#  undef machine_arch_type
+#  define machine_arch_type	__machine_arch_type
+# else
+#  define machine_arch_type	MACH_TYPE_YF255
+# endif
+# define machine_is_yf255()	(machine_arch_type == MACH_TYPE_YF255)
+#else
+# define machine_is_yf255()	(0)
+#endif
 /*
  * These have not yet been registered
  */

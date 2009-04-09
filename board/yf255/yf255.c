@@ -40,7 +40,7 @@ int board_init (void)
 	/* so we do _nothing_ here */
 
 	/* arch number of Lubbock-Board */
-	gd->bd->bi_arch_number = MACH_TYPE_LUBBOCK;
+	gd->bd->bi_arch_number = MACH_TYPE_YF255;
 
 	/* adress of boot parameters */
 	gd->bd->bi_boot_params = 0xa0000100;
